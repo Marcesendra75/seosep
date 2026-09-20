@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEOSEP — Sindicato de Empleados de la Obra Social de Empleados Públicos</title>
+  <meta name="description" content="SEOSEP defiende los derechos de los trabajadores de OSEP Mendoza. Asesoría legal, gestión gremial, turismo, capacitación y más servicios para los afiliados." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="imagenes/favicon.png" />
+  <link rel="apple-touch-icon" href="imagenes/favicon.png" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Phosphor Icons (iconos modernos de línea fina) -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <!-- CSS compilado -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar">
+    <div class="navbar__inner">
+
+      <a href="index.html" class="navbar__logo">
+        <img src="imagenes/logoindex.png" alt="SEOSEP" class="navbar__logo-img" />
+      </a>
+
+      <nav class="navbar__nav">
+        <a href="#inicio"    class="navbar__link active">Inicio</a>
+        <a href="#servicios" class="navbar__link">Servicios</a>
+        <a href="#nosotros"  class="navbar__link">Nosotros</a>
+        <a href="#noticias"  class="navbar__link">Noticias</a>
+        <a href="#contacto"  class="navbar__link">Contacto</a>
+      </nav>
+
+      <a href="#contacto" class="navbar__cta">
+        <i class="ph ph-phone"></i>
+        Contactanos
+      </a>
+
+      <button class="navbar__hamburger" id="menuToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Menú mobile -->
+    <nav class="navbar__mobile" id="mobileMenu">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#noticias">Noticias</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg"></div>
+      <div class="hero__overlay"></div>
+      <div class="hero__shape"></div>
+
+      <div class="hero__inner">
+        <div class="hero__badge">
+          <i class="ph ph-seal-check"></i>
+          Sindicato de empleados de OSEP Mendoza
+        </div>
+
+        <h1 class="hero__title">
+          SEOSEP<br />
+          <span>Juntos protegemos</span><br />
+          tus derechos
+        </h1>
+
+        <p class="hero__description">
+          Defendemos y representamos a los trabajadores de la Obra Social de Empleados Públicos
+          de Mendoza. Asesoría legal, gestión gremial y servicios integrales para cada afiliado.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#servicios" class="hero__btn-primary">
+            <i class="ph ph-list-checks"></i>
+            Conocé nuestros servicios
+          </a>
+          <a href="#contacto" class="hero__btn-secondary">
+            <i class="ph ph-envelope"></i>
+            Escribinos
+          </a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <div class="hero__stat-number">+3.000</div>
+            <div class="hero__stat-label">Afiliados activos</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-number">+20</div>
+            <div class="hero__stat-label">Años de trayectoria</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-number">9</div>
+            <div class="hero__stat-label">Servicios disponibles</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GRID DE SERVICIOS ===================== -->
+    <section class="services" id="servicios">
+      <div class="services__inner">
+
+        <div class="services__header">
+          <span class="services__pretitle">Lo que hacemos por vos</span>
+          <h2 class="services__title">Nuestros servicios</h2>
+          <p class="services__subtitle">
+            Accedé a todos los beneficios que SEOSEP tiene para los trabajadores de OSEP.
+          </p>
+        </div>
+
+        <div class="services__grid">
+
+          <!-- Card 1 -->
+          <article class="card">
+            <div class="card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?w=600&q=75" alt="Asesoría Legal" loading="lazy" />
+              <div class="card__icon">
+                <i class="ph ph-scales" style="font-size:24px;"></i>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Asesoría Legal</h3>
+              <p class="card__text">
+                Defendemos tus derechos ante conflictos laborales, sumarios y cualquier situación
+                que requiera representación legal frente a OSEP o el Estado provincial.
+              </p>
+              <div class="card__footer">
+                <a href="servicios/legal.html" class="card__btn">
+                  Ver más <i class="ph ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <div class="card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=600&q=75" alt="Gestión ante OSEP" loading="lazy" />
+              <div class="card__icon">
+                <i class="ph ph-clipboard-text" style="font-size:24px;"></i>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Gestión ante OSEP</h3>
+              <p class="card__text">
+                Te acompañamos en trámites, autorizaciones y reclamos ante la obra social.
+                Simplificamos cada gestión para que vos te enfoques en lo que importa.
+              </p>
+              <div class="card__footer">
+                <a href="servicios/gestion-osep.html" class="card__btn">
+                  Ver más <i class="ph ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card">
+            <div class="card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=75" alt="Acción Gremial" loading="lazy" />
+              <div class="card__icon">
+                <i class="ph ph-handshake" style="font-size:24px;"></i>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Acción Gremial</h3>
+              <p class="card__text">
+                Representamos a los trabajadores en negociaciones paritarias, convenios colectivos
+                y cualquier instancia de diálogo con las autoridades de OSEP.
+              </p>
+              <div class="card__footer">
+                <a href="servicios/gremial.html" class="card__btn">
+                  Ver más <i class="ph ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card">
+            <div class="card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=75" alt="Capacitación" loading="lazy" />
+              <div class="card__icon">
+                <i class="ph ph-graduation-cap" style="font-size:24px;"></i>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Capacitación</h3>
+              <p class="card__text">
+                Ofrecemos cursos, talleres y programas de formación profesional para potenciar
+                las habilidades de todos los trabajadores afiliados.
+              </p>
+              <div class="card__footer">
+                <a href="servicios/capacitacion.html" class="card__btn">
+                  Ver más <i class="ph ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="card">
+            <div class="card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=75" alt="Turismo y Recreación" loading="lazy" />
+              <div class="card__icon">
+                <i class="ph ph-airplane" style="font-size:24px;"></i>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Turismo y Recreación</h3>
+              <p class="card__text">
+                Colonias de vacaciones, convenios con hoteles y destinos turísticos a precios
+                preferenciales para afiliados y su grupo familiar.
+              </p>
+              <div class="card__footer">
+                <a href="servicios/turismo.html" class="card__btn">
+                  Ver más <i class="ph ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="card">
+            <div class="card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=75" alt="Salud y Bienestar" loading="lazy" />
+              <div class="card__icon">
+                <i class="ph ph-heartbeat" style="font-size:24px;"></i>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Salud y Bienestar</h3>
+              <p class="card__text">
+                Programas preventivos, actividades deportivas y talleres de bienestar para cuidar
+                la salud integral de nuestros afiliados y sus familias.
+              </p>
+              <div class="card__footer">
+                <a href="servicios/salud.html" class="card__btn">
+                  Ver más <i class="ph ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="card">
+            <div class="card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&q=75" alt="Ayuda Social" loading="lazy" />
+              <div class="card__icon">
+                <i class="ph ph-house-line" style="font-size:24px;"></i>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Ayuda Social</h3>
+              <p class="card__text">
+                Subsidios y asistencia económica ante situaciones de emergencia, enfermedad
+                o necesidad del afiliado y su grupo familiar directo.
+              </p>
+              <div class="card__footer">
+                <a href="servicios/ayuda-social.html" class="card__btn">
+                  Ver más <i class="ph ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="card">
+            <div class="card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=75" alt="Convenios y Descuentos" loading="lazy" />
+              <div class="card__icon">
+                <i class="ph ph-tag" style="font-size:24px;"></i>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Convenios y Descuentos</h3>
+              <p class="card__text">
+                Accedé a descuentos exclusivos en farmacias, ópticas, comercios, indumentaria
+                y mucho más gracias a los convenios firmados por el sindicato.
+              </p>
+              <div class="card__footer">
+                <a href="servicios/convenios.html" class="card__btn">
+                  Ver más <i class="ph ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 9 -->
+          <article class="card">
+            <div class="card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=600&q=75" alt="Guardería y Licencias" loading="lazy" />
+              <div class="card__icon">
+                <i class="ph ph-baby" style="font-size:24px;"></i>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Guardería y Licencias</h3>
+              <p class="card__text">
+                Asesoramiento sobre licencias parentales, asignaciones familiares y subsidios
+                por guardería para que puedas ejercer tus derechos sin complicaciones.
+              </p>
+              <div class="card__footer">
+                <a href="servicios/guarderia.html" class="card__btn">
+                  Ver más <i class="ph ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /services__grid -->
+      </div><!-- /services__inner -->
+    </section>
+
+    <!-- ===================== SECCIONES ZIGZAG ===================== -->
+
+    <!-- Zigzag 1 — imagen izquierda -->
+    <section class="zigzag">
+      <div class="zigzag__inner">
+        <div class="zigzag__row">
+
+          <div class="zigzag__img-wrap">
+            <img
+              class="zigzag__img"
+              src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?w=800&q=80"
+              alt="Asesoría Legal"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="zigzag__content">
+            <span class="zigzag__pretitle">Servicio destacado</span>
+            <h2 class="zigzag__title">
+              <a href="servicios/legal.html">Tu defensa, nuestra prioridad</a>
+            </h2>
+            <p class="zigzag__text">
+              El equipo legal de SEOSEP trabaja para proteger tus derechos laborales en cada
+              instancia. Desde sumarios administrativos hasta recursos judiciales, estamos
+              con vos en cada paso.
+            </p>
+            <ul class="zigzag__list">
+              <li class="zigzag__list-item">
+                <i class="ph ph-check-circle" style="font-size:20px; color:#3B2082;"></i>
+                Representación en sumarios administrativos
+              </li>
+              <li class="zigzag__list-item">
+                <i class="ph ph-check-circle" style="font-size:20px; color:#3B2082;"></i>
+                Asesoramiento ante despidos y suspensiones
+              </li>
+              <li class="zigzag__list-item">
+                <i class="ph ph-check-circle" style="font-size:20px; color:#3B2082;"></i>
+                Orientación en reclamos laborales
+              </li>
+            </ul>
+            <a href="servicios/legal.html" class="zigzag__btn">
+              <i class="ph ph-arrow-right"></i>
+              Conocé más
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Zigzag 2 — imagen derecha (reverse) -->
+    <section class="zigzag">
+      <div class="zigzag__inner">
+        <div class="zigzag__row zigzag__row--reverse">
+
+          <div class="zigzag__img-wrap">
+            <img
+              class="zigzag__img"
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
+              alt="Acción Gremial"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="zigzag__content">
+            <span class="zigzag__pretitle">Acción gremial</span>
+            <h2 class="zigzag__title">
+              <a href="servicios/gremial.html">Negociación colectiva que te beneficia</a>
+            </h2>
+            <p class="zigzag__text">
+              SEOSEP negocia directamente con las autoridades de OSEP para mejorar las condiciones
+              de trabajo, los salarios y los beneficios de todos los trabajadores afiliados.
+            </p>
+            <ul class="zigzag__list">
+              <li class="zigzag__list-item">
+                <i class="ph ph-check-circle" style="font-size:20px; color:#3B2082;"></i>
+                Paritarias anuales y revisiones salariales
+              </li>
+              <li class="zigzag__list-item">
+                <i class="ph ph-check-circle" style="font-size:20px; color:#3B2082;"></i>
+                Mejora de condiciones de trabajo y ergonomía
+              </li>
+              <li class="zigzag__list-item">
+                <i class="ph ph-check-circle" style="font-size:20px; color:#3B2082;"></i>
+                Convenios colectivos actualizados
+              </li>
+            </ul>
+            <a href="servicios/gremial.html" class="zigzag__btn">
+              <i class="ph ph-arrow-right"></i>
+              Conocé más
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Zigzag 3 — imagen izquierda -->
+    <section class="zigzag">
+      <div class="zigzag__inner">
+        <div class="zigzag__row">
+
+          <div class="zigzag__img-wrap">
+            <img
+              class="zigzag__img"
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80"
+              alt="Turismo y Recreación"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="zigzag__content">
+            <span class="zigzag__pretitle">Bienestar y recreación</span>
+            <h2 class="zigzag__title">
+              <a href="servicios/turismo.html">Turismo y recreación para toda la familia</a>
+            </h2>
+            <p class="zigzag__text">
+              Disfrutá de colonias de vacaciones, destinos turísticos con descuento y
+              actividades recreativas durante todo el año para vos y tu grupo familiar.
+            </p>
+            <ul class="zigzag__list">
+              <li class="zigzag__list-item">
+                <i class="ph ph-check-circle" style="font-size:20px; color:#3B2082;"></i>
+                Colonias de verano e invierno para chicos
+              </li>
+              <li class="zigzag__list-item">
+                <i class="ph ph-check-circle" style="font-size:20px; color:#3B2082;"></i>
+                Convenios con hoteles y cabañas en todo el país
+              </li>
+              <li class="zigzag__list-item">
+                <i class="ph ph-check-circle" style="font-size:20px; color:#3B2082;"></i>
+                Actividades y eventos para afiliados
+              </li>
+            </ul>
+            <a href="servicios/turismo.html" class="zigzag__btn">
+              <i class="ph ph-arrow-right"></i>
+              Conocé más
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== QUIÉNES SOMOS ===================== -->
+    <section class="about" id="nosotros">
+      <div class="about__inner">
+        <div>
+          <p class="about__pretitle">Quiénes somos</p>
+          <h2 class="about__title">El sindicato que trabaja por los trabajadores de OSEP</h2>
+          <p class="about__text">
+            SEOSEP nació con la convicción de que los trabajadores de la Obra Social de Empleados
+            Públicos merecen una representación sólida, transparente y comprometida con sus
+            derechos y bienestar.
+          </p>
+          <p class="about__text">
+            Somos una organización democrática, elegida por los propios trabajadores, con presencia
+            activa en todas las sedes y dependencias de OSEP en la provincia de Mendoza.
+          </p>
+          <a href="#contacto" class="about__btn">
+            <i class="ph ph-users"></i>
+            Conocé a la comisión directiva
+          </a>
+        </div>
+        <div>
+          <img
+            class="about__img"
+            src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80"
+            alt="Equipo SEOSEP"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== NOTICIAS ===================== -->
+    <section class="news" id="noticias">
+      <div class="news__inner">
+        <div class="news__header">
+          <h2 class="news__title">Últimas novedades</h2>
+          <a href="noticias.html" class="news__link-all">
+            Ver todas <i class="ph ph-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="news__grid">
+
+          <article class="news-card">
+            <div class="news-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=75" alt="Paritarias 2025" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <span class="news-card__tag">Paritarias</span>
+              <h3 class="news-card__title">
+                SEOSEP logró un acuerdo salarial histórico en las negociaciones de paritarias
+              </h3>
+              <div class="news-card__date">
+                <i class="ph ph-calendar-blank"></i>
+                10 de septiembre, 2026
+              </div>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=75" alt="Capacitación" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <span class="news-card__tag">Capacitación</span>
+              <h3 class="news-card__title">
+                Nuevos talleres de formación profesional disponibles para todos los afiliados
+              </h3>
+              <div class="news-card__date">
+                <i class="ph ph-calendar-blank"></i>
+                5 de septiembre, 2026
+              </div>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=75" alt="Turismo" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <span class="news-card__tag">Turismo</span>
+              <h3 class="news-card__title">
+                Se abren las inscripciones para las colonias de verano 2026-2027
+              </h3>
+              <div class="news-card__date">
+                <i class="ph ph-calendar-blank"></i>
+                1 de septiembre, 2026
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section class="contact" id="contacto">
+      <div class="contact__inner">
+
+        <div class="contact__info">
+          <span class="contact__pretitle">Estamos para vos</span>
+          <h2 class="contact__title">Contactate con SEOSEP</h2>
+          <p class="contact__text">
+            ¿Tenés una consulta, necesitás asesoramiento o querés afiliarte?
+            Nuestro equipo está disponible para ayudarte.
+          </p>
+
+          <div class="contact__items">
+            <div class="contact__item">
+              <div class="contact__item-icon">
+                <i class="ph ph-map-pin" style="font-size:22px;"></i>
+              </div>
+              <div>
+                <div class="contact__item-label">Dirección</div>
+                <div class="contact__item-value">Av. San Martín 123, Ciudad, Mendoza</div>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__item-icon">
+                <i class="ph ph-phone" style="font-size:22px;"></i>
+              </div>
+              <div>
+                <div class="contact__item-label">Teléfono</div>
+                <div class="contact__item-value">0261 XXX-XXXX</div>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__item-icon">
+                <i class="ph ph-envelope" style="font-size:22px;"></i>
+              </div>
+              <div>
+                <div class="contact__item-label">Correo electrónico</div>
+                <div class="contact__item-value">contacto@seosep.org.ar</div>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__item-icon">
+                <i class="ph ph-clock" style="font-size:22px;"></i>
+              </div>
+              <div>
+                <div class="contact__item-label">Horario de atención</div>
+                <div class="contact__item-value">Lunes a viernes de 8:00 a 15:00 hs.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form" onsubmit="return false;">
+          <div class="contact__field">
+            <label for="nombre">Nombre y apellido</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej. María González" />
+          </div>
+          <div class="contact__field">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" />
+          </div>
+          <div class="contact__field">
+            <label for="telefono">Teléfono (opcional)</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="0261 XXX-XXXX" />
+          </div>
+          <div class="contact__field">
+            <label for="mensaje">Tu consulta</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Contanos en qué podemos ayudarte..."></textarea>
+          </div>
+          <button type="submit" class="contact__submit">
+            <i class="ph ph-paper-plane-tilt"></i>
+            Enviar consulta
+          </button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer__main">
+
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">
+          <img src="imagenes/logoindex.png" alt="SEOSEP" class="footer__logo-img" />
+        </a>
+        <p class="footer__description">
+          Sindicato de empleados de la Obra Social de Empleados Públicos de Mendoza.
+          Defendemos tus derechos, todos los días.
+        </p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Facebook">
+            <i class="ph ph-facebook-logo" style="font-size:18px;"></i>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <i class="ph ph-instagram-logo" style="font-size:18px;"></i>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="WhatsApp">
+            <i class="ph ph-whatsapp-logo" style="font-size:18px;"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title">Servicios</h4>
+        <ul class="footer__list">
+          <li><a href="servicios/legal.html" class="footer__list-link"><i class="ph ph-caret-right"></i>Asesoría Legal</a></li>
+          <li><a href="servicios/gestion-osep.html" class="footer__list-link"><i class="ph ph-caret-right"></i>Gestión ante OSEP</a></li>
+          <li><a href="servicios/gremial.html" class="footer__list-link"><i class="ph ph-caret-right"></i>Acción Gremial</a></li>
+          <li><a href="servicios/capacitacion.html" class="footer__list-link"><i class="ph ph-caret-right"></i>Capacitación</a></li>
+          <li><a href="servicios/turismo.html" class="footer__list-link"><i class="ph ph-caret-right"></i>Turismo</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title">Institución</h4>
+        <ul class="footer__list">
+          <li><a href="#nosotros" class="footer__list-link"><i class="ph ph-caret-right"></i>Quiénes somos</a></li>
+          <li><a href="#noticias" class="footer__list-link"><i class="ph ph-caret-right"></i>Noticias</a></li>
+          <li><a href="#contacto" class="footer__list-link"><i class="ph ph-caret-right"></i>Contacto</a></li>
+          <li><a href="https://www.osepmendoza.com.ar" target="_blank" class="footer__list-link"><i class="ph ph-caret-right"></i>OSEP Mendoza</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title">Contacto</h4>
+        <ul class="footer__list">
+          <li><a href="tel:02610000000" class="footer__list-link"><i class="ph ph-phone"></i>0261 XXX-XXXX</a></li>
+          <li><a href="mailto:contacto@seosep.org.ar" class="footer__list-link"><i class="ph ph-envelope"></i>contacto@seosep.org.ar</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__bottom-inner">
+        <span class="footer__copy">© 2026 SEOSEP — Todos los derechos reservados.</span>
+        <a href="https://www.osepmendoza.com.ar" target="_blank" class="footer__osep-link">
+          Obra Social OSEP Mendoza
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS: toggle menú mobile -->
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('mobileMenu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+
+    // Cerrar al hacer click en un link del mobile
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => menu.classList.remove('open'));
+    });
+
+    // Smooth scroll para links internos
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

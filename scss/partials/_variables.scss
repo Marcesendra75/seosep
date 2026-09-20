@@ -1,0 +1,92 @@
+// ============================================================
+// _variables.scss — SEOSEP
+// ============================================================
+
+// --- Colores principales ---
+$color-violet-dark:   #3B2082;
+$color-violet:        #5B35B0;
+$color-violet-mid:    #7B4FBF;
+$color-violet-light:  #C8B0E8;
+$color-violet-pale:   #F0EAF9;
+$color-white:         #FFFFFF;
+$color-black:         #1A1A2E;
+$color-gray-dark:     #3D3D5C;
+$color-gray:          #6B6B8A;
+$color-gray-light:    #E8E4F0;
+$color-gray-pale:     #F7F5FC;
+
+// --- Alias semánticos ---
+$primary:             $color-violet-dark;
+$primary-mid:         $color-violet;
+$primary-light:       $color-violet-light;
+$primary-pale:        $color-violet-pale;
+$accent:              $color-violet-mid;
+$text-dark:           $color-black;
+$text-medium:         $color-gray-dark;
+$text-muted:          $color-gray;
+$bg-light:            $color-gray-pale;
+$border-color:        $color-gray-light;
+
+// --- Tipografía ---
+$font-sans:           'Inter', 'Segoe UI', system-ui, sans-serif;
+$font-size-base:      16px;
+$font-size-sm:        0.875rem;
+$font-size-lg:        1.125rem;
+$font-size-xl:        1.375rem;
+$font-size-2xl:       1.75rem;
+$font-size-3xl:       2.25rem;
+$font-size-4xl:       3rem;
+$font-weight-regular: 400;
+$font-weight-medium:  500;
+$font-weight-semibold:600;
+$font-weight-bold:    700;
+$line-height-base:    1.6;
+$line-height-tight:   1.25;
+
+// --- Espaciado ---
+$spacing-xs:  0.25rem;
+$spacing-sm:  0.5rem;
+$spacing-md:  1rem;
+$spacing-lg:  1.5rem;
+$spacing-xl:  2rem;
+$spacing-2xl: 3rem;
+$spacing-3xl: 4rem;
+$spacing-4xl: 6rem;
+
+// --- Layout ---
+$container-max:       1200px;
+$container-padding:   1.5rem;
+$border-radius-sm:    6px;
+$border-radius:       12px;
+$border-radius-lg:    20px;
+$border-radius-xl:    32px;
+
+// --- Sombras ---
+$shadow-sm:   0 1px 3px rgba(59, 32, 130, 0.08);
+$shadow-md:   0 4px 16px rgba(59, 32, 130, 0.12);
+$shadow-lg:   0 8px 32px rgba(59, 32, 130, 0.18);
+$shadow-card: 0 2px 12px rgba(59, 32, 130, 0.1);
+
+// --- Transiciones ---
+$transition-fast:   all 0.18s ease;
+$transition-base:   all 0.28s ease;
+$transition-slow:   all 0.42s ease;
+
+// --- Breakpoints ---
+$bp-sm:   576px;
+$bp-md:   768px;
+$bp-lg:   992px;
+$bp-xl:   1200px;
+
+// --- Navbar ---
+$navbar-height:       72px;
+$navbar-bg:           $color-violet-dark;
+
+// --- Hero ---
+$hero-height:         700px;
+$hero-bg:             $color-violet-dark;
+
+// --- Cards ---
+$card-img-height:     200px;
+$card-border-radius:  $border-radius;
+$card-padding:        $spacing-lg;

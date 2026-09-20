@@ -1,0 +1,13 @@
+// ============================================================
+// main.scss — SEOSEP
+// ============================================================
+
+@forward 'partials/variables';
+@forward 'partials/mixins';
+
+@use 'partials/reset';
+@use 'partials/navbar';
+@use 'partials/hero';
+@use 'partials/cards';
+@use 'partials/sections';
+@use 'partials/footer';

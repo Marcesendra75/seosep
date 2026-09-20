@@ -1,0 +1,140 @@
+// ============================================================
+// _hero.scss — SEOSEP
+// ============================================================
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.hero {
+  position: relative;
+  min-height: $hero-height;
+  background-color: $hero-bg;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: $navbar-height;
+
+  &__bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.18;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba($color-violet-dark, 0.96) 0%,
+      rgba($color-violet, 0.88) 50%,
+      rgba($color-violet-mid, 0.82) 100%
+    );
+  }
+
+  &__shape {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: $color-white;
+    clip-path: ellipse(55% 100% at 50% 100%);
+    opacity: 0.06;
+  }
+
+  &__inner {
+    @include container;
+    position: relative;
+    z-index: 2;
+    padding-block: $spacing-4xl;
+    max-width: 800px;
+  }
+
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: $spacing-sm;
+    background: rgba($color-white, 0.12);
+    border: 1px solid rgba($color-white, 0.25);
+    color: $primary-light;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    padding: 0.35rem 1rem;
+    border-radius: 100px;
+    margin-bottom: $spacing-xl;
+    letter-spacing: 0.05em;
+  }
+
+  &__title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: $font-weight-bold;
+    color: $color-white;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: $spacing-lg;
+
+    span {
+      color: $primary-light;
+    }
+  }
+
+  &__description {
+    font-size: $font-size-lg;
+    color: rgba($color-white, 0.80);
+    line-height: 1.7;
+    margin-bottom: $spacing-2xl;
+    max-width: 600px;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-md;
+  }
+
+  &__btn-primary {
+    @include btn-white;
+    font-size: 1rem;
+    padding: 0.875rem 2rem;
+  }
+
+  &__btn-secondary {
+    @include btn-base;
+    background: transparent;
+    color: $color-white;
+    border-color: rgba($color-white, 0.4);
+    font-size: 1rem;
+    padding: 0.875rem 2rem;
+
+    &:hover {
+      border-color: $color-white;
+      background: rgba($color-white, 0.08);
+      transform: translateY(-2px);
+    }
+  }
+
+  &__stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-2xl;
+    margin-top: $spacing-3xl;
+    padding-top: $spacing-2xl;
+    border-top: 1px solid rgba($color-white, 0.15);
+  }
+
+  &__stat {
+    &-number {
+      font-size: $font-size-3xl;
+      font-weight: $font-weight-bold;
+      color: $color-white;
+      line-height: 1;
+    }
+    &-label {
+      font-size: $font-size-sm;
+      color: rgba($color-white, 0.65);
+      margin-top: 2px;
+    }
+  }
+}

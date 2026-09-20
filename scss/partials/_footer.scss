@@ -1,0 +1,152 @@
+// ============================================================
+// _footer.scss — SEOSEP
+// ============================================================
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.footer {
+  background-color: $color-black;
+  color: rgba($color-white, 0.75);
+
+  &__main {
+    @include container;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-2xl;
+    padding-block: $spacing-3xl;
+
+    @include respond-to(md) {
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    @include respond-to(lg) {
+      grid-template-columns: 2.5fr 1fr 1fr 1fr;
+      gap: $spacing-3xl;
+    }
+  }
+
+  &__brand {
+    @include flex-column;
+    gap: $spacing-md;
+  }
+
+  &__logo {
+    display: inline-flex;
+    text-decoration: none;
+
+    &-img {
+      height: 40px;
+      width: auto;
+      display: block;
+      opacity: 0.88;
+      transition: $transition-fast;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__description {
+    font-size: $font-size-sm;
+    line-height: 1.7;
+    max-width: 300px;
+  }
+
+  &__social {
+    display: flex;
+    gap: $spacing-sm;
+    margin-top: $spacing-sm;
+  }
+
+  &__social-link {
+    width: 38px;
+    height: 38px;
+    border-radius: $border-radius-sm;
+    border: 1px solid rgba($color-white, 0.15);
+    @include flex-center;
+    color: rgba($color-white, 0.7);
+    transition: $transition-fast;
+
+    i {
+      font-size: 18px;
+    }
+
+    &:hover {
+      background: $primary;
+      border-color: $primary;
+      color: $color-white;
+      transform: translateY(-2px);
+    }
+  }
+
+  &__col {
+    @include flex-column;
+    gap: $spacing-md;
+  }
+
+  &__col-title {
+    font-size: $font-size-base;
+    font-weight: $font-weight-semibold;
+    color: $color-white;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__list {
+    @include flex-column;
+    gap: $spacing-sm;
+  }
+
+  &__list-link {
+    font-size: $font-size-sm;
+    color: rgba($color-white, 0.65);
+    text-decoration: none;
+    transition: $transition-fast;
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+
+    i {
+      font-size: 14px;
+      opacity: 0;
+      transition: $transition-fast;
+    }
+
+    &:hover {
+      color: $primary-light;
+      padding-left: 4px;
+
+      i {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid rgba($color-white, 0.08);
+    padding-block: $spacing-lg;
+
+    &-inner {
+      @include container;
+      @include flex-between;
+      flex-wrap: wrap;
+      gap: $spacing-md;
+    }
+  }
+
+  &__copy {
+    font-size: $font-size-sm;
+    color: rgba($color-white, 0.45);
+  }
+
+  &__osep-link {
+    font-size: $font-size-sm;
+    color: $primary-light;
+    text-decoration: none;
+    transition: $transition-fast;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}

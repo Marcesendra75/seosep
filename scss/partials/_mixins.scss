@@ -1,0 +1,212 @@
+// ============================================================
+// _mixins.scss — SEOSEP
+// ============================================================
+@use 'variables' as *;
+
+// --- Responsive ---
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == sm {
+    @media (min-width: #{$bp-sm}) { @content; }
+  } @else if $breakpoint == md {
+    @media (min-width: #{$bp-md}) { @content; }
+  } @else if $breakpoint == lg {
+    @media (min-width: #{$bp-lg}) { @content; }
+  } @else if $breakpoint == xl {
+    @media (min-width: #{$bp-xl}) { @content; }
+  }
+}
+
+@mixin respond-below($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: #{$bp-sm - 1px}) { @content; }
+  } @else if $breakpoint == md {
+    @media (max-width: #{$bp-md - 1px}) { @content; }
+  } @else if $breakpoint == lg {
+    @media (max-width: #{$bp-lg - 1px}) { @content; }
+  }
+}
+
+// --- Contenedor ---
+@mixin container {
+  width: 100%;
+  max-width: $container-max;
+  margin-inline: auto;
+  padding-inline: $container-padding;
+}
+
+// --- Flex helpers ---
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// --- Sección genérica ---
+@mixin section-padding {
+  padding-block: $spacing-4xl;
+
+  @include respond-below(md) {
+    padding-block: $spacing-3xl;
+  }
+}
+
+// --- Título de sección ---
+@mixin section-title {
+  font-size: $font-size-2xl;
+  font-weight: $font-weight-bold;
+  color: $primary;
+  line-height: $line-height-tight;
+  margin-bottom: $spacing-md;
+
+  @include respond-to(lg) {
+    font-size: $font-size-3xl;
+  }
+}
+
+// --- Botón base ---
+@mixin btn-base {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-sm;
+  padding: 0.625rem 1.5rem;
+  border-radius: $border-radius;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semibold;
+  text-decoration: none;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: $transition-base;
+  letter-spacing: 0.02em;
+}
+
+@mixin btn-primary {
+  @include btn-base;
+  background-color: $primary;
+  color: $color-white;
+  border-color: $primary;
+
+  &:hover {
+    background-color: $primary-mid;
+    border-color: $primary-mid;
+    transform: translateY(-2px);
+    box-shadow: $shadow-md;
+  }
+}
+
+@mixin btn-outline {
+  @include btn-base;
+  background-color: transparent;
+  color: $primary;
+  border-color: $primary;
+
+  &:hover {
+    background-color: $primary;
+    color: $color-white;
+    transform: translateY(-2px);
+  }
+}
+
+@mixin btn-white {
+  @include btn-base;
+  background-color: $color-white;
+  color: $primary;
+  border-color: $color-white;
+
+  &:hover {
+    background-color: $primary-pale;
+    transform: translateY(-2px);
+    box-shadow: $shadow-md;
+  }
+}
+
+// --- Card base ---
+@mixin card-base {
+  background: $color-white;
+  border-radius: $card-border-radius;
+  box-shadow: $shadow-card;
+  overflow: hidden;
+  transition: $transition-base;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+// --- Imagen de card ---
+@mixin card-img {
+  width: 100%;
+  height: $card-img-height;
+  object-fit: cover;
+  display: block;
+}
+
+// --- Overlay degradado ---
+@mixin overlay-gradient($from: rgba(59, 32, 130, 0.7), $to: rgba(26, 26, 46, 0.5)) {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, $from, $to);
+  }
+}
+
+// --- Zigzag layout ---
+@mixin zigzag-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-2xl;
+  align-items: center;
+
+  @include respond-to(lg) {
+    grid-template-columns: 350px 1fr;
+    gap: $spacing-3xl;
+  }
+
+  &--reverse {
+    @include respond-to(lg) {
+      grid-template-columns: 1fr 350px;
+
+      .zigzag__img {
+        order: 2;
+      }
+      .zigzag__content {
+        order: 1;
+      }
+    }
+  }
+}
+
+// --- Truncar texto ---
+@mixin text-clamp($lines: 3) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// --- Imagen de aside zigzag ---
+@mixin zigzag-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-lg;
+
+  @include respond-below(lg) {
+    height: 260px;
+  }
+}
